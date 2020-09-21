@@ -1,14 +1,14 @@
 {
   "name": "discord-bot",
   "productName": "Discord Bot - Controls",
-  "version": "0.1.0",
+  "version": "1",
   "description": "Discord Bot - Controls",
   "main": "bot.js",
   "author": {
     "name": "DBC"
   },
   "scripts": {
-    "start": "node bot"
+    "start": "node bot.js"
   },
   "dependencies": {
     "console-timestamp": "^0.3.0",
