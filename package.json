@@ -8,6 +8,7 @@
     "name": "DBC"
   },
   "scripts": {
+    "start": "npm install"
     "start": "node bot.js"
   },
   "dependencies": {
