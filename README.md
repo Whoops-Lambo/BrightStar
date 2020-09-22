@@ -14,6 +14,7 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 <li>This bot is not to be redistributed!</li>
 <li>Make a feature request under the feature requests folder!</li>
 <li>Make a bug report under the Bug Report Folder!</li>
+<li>Only edit the welcome message part, the bot token and the game status once you download the bot files, add more commands and post them in the post commands folder!</li>
 </ol>
 
 <h2>Commands</h2>
