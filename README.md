@@ -24,4 +24,9 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 <li>+help</li>
 </ul>
 
+<h2>FAQ</h2>
+Q)Is this bot open source?
+A) Will be soon
+
+
 <h1><b>Contents coming soon!</b></h1>
