@@ -14,4 +14,10 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 <li>Make a bug report under the Bug Report Folder!</li>
 </ol>
 
+<h2>Commands</h2>
+<ul>
+<li>+kick [@user or User ID] [reason]</li>
+<li>+dice</li>
+</ul>
+
 <h1><b>Contents coming soon!</b></h1>
