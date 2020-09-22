@@ -1,6 +1,8 @@
 # BrightStar Bot ©2020
 Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 
+<img src="https://tenor.com/view/bass-rebels-discord-music-discord-bass-rebels-discord-gif-15927789" width="500" height="500"/€
+
 <h2><u>Important links:</u></h2>
 <h3><b>Support Discord Server: https://discord.gg/uXJVVYg </b></h3>
 
