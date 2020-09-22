@@ -1,7 +1,7 @@
 # BrightStar Bot ©2020
 Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 
-<img src="https://github.com/Whoops-Lambo/BrightStar/blob/master/02DD231A-9086-4B8C-AF26-BFBE509121A2.jpeg" width="700" height="500"/>
+<img src="https://github.com/Whoops-Lambo/BrightStar/blob/master/02DD231A-9086-4B8C-AF26-BFBE509121A2.jpeg" width="1000" height="500"/>
 
 <h2><u>Important links:</u></h2>
 <h3><b>Support Discord Server: https://discord.gg/uXJVVYg </b></h3>
