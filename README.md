@@ -22,6 +22,7 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 <li>+dice</li>
 <li>+warn [@user or User ID] [reason]</li>
 <li>+help</li>
+<li>+big</li>
 </ul>
 
 <h2>FAQ</h2>
