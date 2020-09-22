@@ -20,6 +20,7 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 <ul>
 <li>+kick [@user or User ID] [reason]</li>
 <li>+dice</li>
+<li>+warn [@user or User ID] [reason]</li>
 </ul>
 
 <h1><b>Contents coming soon!</b></h1>
