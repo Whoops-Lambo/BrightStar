@@ -633,6 +633,7 @@ client.on("message", async function (message) {
             .addField("Muted By", `<@${message.author.id}> with ID ${message.author.id}`)
             .addField("Muted In", message.channel)
             .addField("Time", message.createdAt)
+            .addField("Reason", reason)
 
         let channel = message.guild.channels.find(ch => ch.name === 'logs');
         if (!channel) {
