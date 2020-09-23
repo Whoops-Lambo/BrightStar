@@ -32,7 +32,9 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 <h2><b><u>FAQ</u></b></h2>
 <ol>
 <li>Q)Is this bot open source? <br />
-A) Will be soon</li>
+A) Will be soon</li> <br/>
 <li> Q)What should I do if I need help? <br />
-A)Click the link at the top of this page that says <b>Join the Support Discord Server:</b> and ask for help there! </li>
+A)Click the link at the top of this page that says <b>Join the Support Discord Server:</b> and ask for help there! </li> <br />
+<li>Q) How do I contact support?<br/>
+A) Once you join the support Discord server, there will be a channel for support.</li>
 </ol>
