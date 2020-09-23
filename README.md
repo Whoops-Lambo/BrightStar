@@ -25,7 +25,8 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 <li>+warn [@user or User ID] [reason]</li>
 <li>+help</li>
 <li>+big - <b> BEING ADDED SOON!</b></li>
-<li>+tempmute [@user or User ID] [time - s = seconds, m = minutes, h = hours, d = days] [reason]</li>
+<li>+tempmute [@user or User ID] [time limit - s = seconds, m = minutes, h = hours, d = days] [reason]</li>
+<li>More to be added!</li>
 </ul>
 
 <h2><b><u>FAQ</u></b></h2>
