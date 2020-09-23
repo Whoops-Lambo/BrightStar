@@ -1,12 +1,30 @@
 <h1><b>Post command format:</b></h1>
 
-<ul>
-<li>Command Name:   </li>
-<li>What the command does:    </li>
-<li>What is the full command, with the variables - ex: @user, reason, time, etc:   </li>
-<li>Full code of the command:    </li>
-<li>Is this in the format of .js?   </li>
-<li>Is this a staff only command or can anyone use it?   </li>
-</ul>
+<table style="width:100%">
+<tr>
+<td>Command Name:  </td>
+<td>  </td>
+</tr>
+<tr>
+<td>What the command does:    </td>
+<td>   </td>
+</tr>
+<tr>
+<td>What is the full command, with the variables - ex: @user, reason, time, etc:  </td> 
+<td>  </td>
+</tr>
+<tr>
+<td>Full code of the command:    </td>
+<td>   </td>
+</tr>
+<tr>
+<td>Is this in the format of .js?   </td>
+<td>   </td>
+</tr>
+<tr>
+<td>Is this a staff only command or can anyone use it?   </td>
+<td>    </td>
+</tr>
+</table>
 
 
