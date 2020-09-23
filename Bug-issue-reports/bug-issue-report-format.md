@@ -7,8 +7,9 @@
 <th>What date did you find the bug/issue: </th>
 </tr>
 <tr>
-<td>Answer:   </td>
-<td>Answer:    </td>
-<td>Answer:    </td>
-<td>Answer:    </td>
+<td>   </td>
+<td>    </td>
+<td>   </td>
+<td>   </td>
 </tr>
+</table>
