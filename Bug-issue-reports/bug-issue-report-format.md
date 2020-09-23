@@ -7,7 +7,7 @@
 <th>What date did you find the bug/issue: </th>
 </tr>
 <tr>
-<td>   </td>
+<td height="25px">   </td>
 <td>    </td>
 <td>   </td>
 <td>   </td>
