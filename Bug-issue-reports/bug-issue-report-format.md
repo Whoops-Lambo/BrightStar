@@ -1,15 +1,19 @@
 <h1>Bug/Issue Report format:</h1>
 <table style="width:100%">
 <tr>
-<th>Discord Name and tag: </th>
-<th>GitHub Username: </th>
-<th>Bug/Issue you have found: </th>
-<th>What date did you find the bug/issue: </th>
+<td>Discord Name and tag: </td>
+<td>    </td>
 </tr>
 <tr>
-<td height="25px">   </td>
-<td>    </td>
-<td>   </td>
-<td>   </td>
+<td>GitHub Username: </td>
+<td>     </td>
+</tr>
+<tr>
+<td>Bug/Issue you have found: </td>
+<td>     </td>
+</tr>
+<tr>
+<td>What date did you find the bug/issue: </td>
+<td>     </td>
 </tr>
 </table>
