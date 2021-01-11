@@ -11,6 +11,8 @@ Welcome to the <b>Bright Star Discord Bot</b> GitHub Page!
 
 <h2><b><u>Important Information</b></u></h2>
 <ol>
+  <li> Bot's Prefix is strictly set to the symbol +</li>
+  <li> In Order for the bot to send its logs, is you must have one channel named logs and another named mod-logging</li>
 <li>This bot is not to be redistributed!</li>
 <li>Make a feature request under the feature requests folder!</li>
 <li>Make a bug report under the Bug Report Folder!</li>
