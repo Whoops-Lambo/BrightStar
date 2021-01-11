@@ -32,9 +32,9 @@ const search = require('yt-search');
 const configs = require("./configs.json");
 const timestamp = require("console-timestamp");
 var botConfigs = {
-    token: "NzI1MzM3ODUyNDA1MjE5MzYw.XvNRhA.8Og0_lSLauzOv1wzORTgh0B_SME",
+    token: "Your Token Here",
     prefix: "+",
-    gameStatus: "A Games",
+    gameStatus: "Custom Status Here",
     statusType: "PLAYING",
     commands: [
     {
@@ -218,17 +218,6 @@ var botConfigs = {
         }
     },
     {
-        "id": 10,
-        "name": "Shutdown command",
-        "activated": false,
-        "config": "",
-        "info": {
-            "example": "!shutdown",
-            "note": "",
-            "requirements": ""
-        }
-    },
-    {
         "id": 11,
         "name": "Banned words",
         "activated": false,
@@ -248,17 +237,6 @@ var botConfigs = {
             "example": "!ticket I cant find Bob",
             "note": "",
             "requirements": "You need a channel to create tickets called: create-ticket, support or something like that."
-        }
-    },
-    {
-        "id": 13,
-        "name": "DM message",
-        "activated": true,
-        "config": "",
-        "info": {
-            "example": "!dm <@user or ID> Message",
-            "note": "!dm @zit_x_us#9951 Hello!",
-            "requirements": ""
         }
     },
     {
@@ -329,19 +307,19 @@ var botConfigs = {
     }
 ],
     welcomemessage: {
-    "channelid": "719606191583658044",
-    "text": "Welcome to the A Games Official YouTube Discord Server! Please make sure to read the rules before getting started!"
+    "channelid": "Welcome Channel ID Here",
+    "text": "Welcome Message Here"
 },
     weather: {
     "degree": "F"
 },
     autorole: {
-    "guildID": "",
-    "autoroleID": "589630020184702995"
+    "guildID": "Discord Server ID Here",
+    "autoroleID": "Role ID to add to new server members here"
 },
     ticketsystem: {
-    "ticketCategoryID": "725339890966986812",
-    "createTicketChannelID": "725340046458224730"
+    "ticketCategoryID": "Support Category ID Here",
+    "createTicketChannelID": "Channel ID Where you want the command to open support tickets here!"
 },
     gif: "BOT_GIF"
 };
@@ -361,7 +339,7 @@ client.on("ready", async function() {
 });
 
 client.on('guildMemberAdd', member => {
-  member.send("Welcome to the A Games Official YouTube Discord Server! If you want to add this bot to your server, Click the following link: https://discord.com/api/oauth2/authorize?client_id=725337852405219360&permissions=8&scope=bot Feel Free to ask questions in the General Chat channel for help! Join The Bright Star Support Server at: https://discord.com/api/oauth2/authorize?client_id=754389443938615348&permissions=8&scope=bot Join the A Games Hall Of Fame Server at: https://discord.gg/3YfVzzM");
+  member.send("Welcome Message that the Bot sends to the New Member(s) in a Direct Message Here");
 });
 
 client.on("guildCreate", async function() {
@@ -445,7 +423,7 @@ client.on("message", async function (message) {
     const command = args.shift().toLowerCase();
 
     if (command === "purge" && botConfigs.plugins[0].activated == true) {
-        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You don't have permission!");
+        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You don't have permission to use this command! This is a **Staff Only** command!");
         const deleteCount = parseInt(args[0], 10);
 
         let embed = new Discord.RichEmbed()
@@ -767,13 +745,6 @@ client.on("message", async function (message) {
         await msg.edit(`Pong! (Took: ${msg.createdTimestamp - message.createdTimestamp}ms.)`);
     }
 
-    if (command === "shutdown" && botConfigs.plugins[10].activated == true) {
-        if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("You don't have permission!");
-        await message.channel.send(`Good night, ${message.author.tag}!`);
-        await message.delete().catch();
-        await process.exit().catch((e) => { console.error(e); });
-    }
-
     if (command === "ticket" && botConfigs.plugins[12].activated == true) {
         if (botConfigs.ticketsystem.createTicketChannelID == "" || botConfigs.ticketsystem.createTicketChannelID == null || botConfigs.ticketsystem.createTicketChannelID == undefined || botConfigs.ticketsystem.ticketCategoryID == "" || botConfigs.ticketsystem.ticketCategoryID == null || botConfigs.ticketsystem.ticketCategoryID == undefined) return message.channel.send("The ticket system is not working - Please run the config").catch(console.error);
         if (message.channel.id === botConfigs.ticketsystem.createTicketChannelID) {
@@ -806,26 +777,6 @@ client.on("message", async function (message) {
         }
     }
     
-            //plugin 13: Dm plugin
-        if (command === "dm" && botConfigs.plugins[13].activated == true) {
-            let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
-            if (!rUser) return message.channel.send("Provide a valid Ping or user id");
-            let reason = args.join(" ").slice(22);
-            if (!reason) return message.channel.send("Provide a message!")
-            let dmEmbed = new Discord.RichEmbed()
-                .setDescription("DM Message")
-                .setColor("#15f153")
-                .setDescription(reason)
-                .setFooter("This message was sent to you by: " + `${message.author.username}  ` + " â€¢ " + `${timestamp('hh:mm:ss')}`, `${message.author.displayAvatarURL}`)
-            let channel = client.users.get(rUser.id)
-            if (!channel) {
-                message.channel.send("Can't find a user.")
-                return;
-            } else {
-            await channel.send(dmEmbed).catch(O_o => console.log({O_o}));
-           }
-        }
-
       if (command === "dice" && botConfigs.plugins[14].activated == true) {
           message.delete()
           message.channel.send(`<@${message.author.id}> The dice landed on ${Math.floor(Math.random() * 6) + 1}`).then(msg => {msg.delete(8000)})
@@ -858,7 +809,29 @@ client.on("message", async function (message) {
             message.delete().catch(O_o => { });
             channel.send(reportEmbed);
         }
-
+if(command === "unmute") {
+    let reason = args.slice(1).join(' ');
+    let user = message.mentions.users.first();
+    let logchannel = message.guild.channels.find('name', 'logs');
+    let role = message.guild.roles.find('name', 'muted')
+    //CHANGE THIS ^^
+    
+    if (!logchannel) return message.reply('I cannot find a logs channel');
+    if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply('**Error:** You do not have the right permissions!');
+                  if (reason.length < 0) return message.reply('You must supply a reason for the unmute.');
+    if (message.mentions.users.size < 1) return message.reply('You must mention someone to mute them.').catch(console.error);
+    //if (!message.guild.member(user).roles.has(role)) return message.reply('I cannot unmute that member');
+    message.guild.member(user).removeRole(role);
+    const embed = new Discord.RichEmbed()
+    .setColor("0xFF0000")
+    .setTimestamp()
+    .addField('Action:', 'Unmute')
+    .addField('User:', `${user.tag})`)
+    .addField('Moderator:', `${message.author.tag}`)
+    .addField('Reason', reason);
+    message.channel.send('**UNMUTED**! I have logged the unmute in the logs channel.')
+    return logchannel.send(embed);
+  };
         if (command === "help" && botConfigs.plugins[16].activated == true) {
             let helpACT = [];
             let helpNACT = [];            
@@ -1105,7 +1078,7 @@ client.on("message", async function (message) {
         });
       
       bot.on("guildMemberAdd", member => {
-        member.send("Welcome to the A Games Official YouTube Discord Server! If you want to add the bot to your server, click the following link: https://discord.com/api/oauth2/authorize?client_id=725337852405219360&permissions=8&scope=bot ")
+        member.send("Welcome Message that is sent to members that join your server via DM Message from the bot.")
           .catch(console.error);
       });
 
